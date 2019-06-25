@@ -1,0 +1,83 @@
+.ac-container{
+	width: 100%;	
+	background: #EEE;
+	
+}
+.ac-container table {
+	margin-left:10px;
+}
+.ac-container label{
+	padding: 5px 10px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	cursor: pointer;
+	line-height: 33px;
+	background: #EEE;
+	text-transform: uppercase;
+
+}
+.ac-container div {
+	background-color: #EEE;
+}
+.ac-container label:hover{
+	background: #EEE;
+	color: #2196D7;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: #EEE;
+	color: rgba(0, 0, 51, 0.75);
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+
+}
+
+
+.ac-container input[type="checkbox"]{
+	display: none;
+}
+.ac-container article{
+	
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p{
+	color: #333;
+	padding: 5px;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.ac-container article a {
+	font-weight: bold;
+}
+.ac-container input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	
+}
+.ac-container input:checked ~ article.ac-small{
+	height: 150px;
+}
+.ac-container input:checked ~ article.ac-medium{
+	height: 300px;
+}
+.ac-container input:checked ~ article.ac-large{
+	height: auto;
+}
+.ac-container input:checked ~ article.ac-xl{
+	height: auto;
+}
+.ac-container input:checked ~ article.ac-xl3{
+	height: 850px;
+}
